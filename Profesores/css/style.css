@@ -1,0 +1,64 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
+  background-color: rgb(202, 113, 113);
+}
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+
+nav {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex;    /* Alinea los elementos en horizontal */
+  justify-content: center; /* Centra los elementos */
+}
+nav li {
+  margin: 0 15px; /* Espacio entre elementos */
+}
+
+nav a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #333;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #007BFF; /* Cambia el color al pasar el cursor */
+}
+
+
+.content{
+    margin: 0 auto;
+    
+    width: 80%;
+    
+
+    background-color: aqua;
+}
+
+
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  position: absolute;
+  bottom: 0 ;
+ 
+  height: 60px;
+}
