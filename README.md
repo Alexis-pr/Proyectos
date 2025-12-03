@@ -1,1 +1,0 @@
-# python-exercises-SEMANA1
