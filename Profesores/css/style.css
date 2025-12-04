@@ -62,3 +62,22 @@ footer {
  
   height: 60px;
 }
+
+.card {
+    display: flex;
+    justify-content: space-between; /* separación entre artículos */
+    gap: 20px;                      /* espacio entre ellos */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    width: 90%;                     /* mantiene el ancho dentro del body */
+    margin: 20px auto;              /* centrado */
+    flex-wrap: wrap;                /* evita que se rompa si la pantalla es pequeña */
+   
+}
+
+.card article {
+    flex: 1;                        /* ambos artículos ocupan el mismo ancho */
+    min-width: 260px;  
+             /* evita que se aplasten */
+}
