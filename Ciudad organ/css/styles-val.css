@@ -1,0 +1,197 @@
+/* RESET + CONFIGURACIÓN GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #dbe9ff, #eaf1ff);
+    color: #0f1e40;
+}
+
+/*HEADER MODERNO CON EFECTO GLASS*/
+header {
+    background: rgba(20, 80, 200, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 30px 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-bottom: 4px solid #7ab8ff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/*NAV SUPER DECORADO*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+nav ul li a:hover {
+    background: #ffffff;
+    color: #1a4eb5;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
+
+/*SECCIONES ESTILO TARJETA PREMIUM*/
+section {
+    background: white;
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-left: 8px solid #1a73e8;
+    animation: fadeIn 0.7s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #1347a4;
+}
+
+/*ARTÍCULO ESTILO TARJETA SUAVE*/
+article {
+    background: #f1f6ff;
+    padding: 20px;
+    border-radius: 14px;
+    border-left: 6px solid #60a3ff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+/*IMÁGENES ESTÉTICAS*/
+img {
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/*TABLAS PROFESIONALES*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+th {
+    background: #1a4eb5;
+    color: white;
+    padding: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+td {
+    background: #f7faff;
+    padding: 12px;
+}
+
+tr:nth-child(even) td {
+    background: #eaf2ff;
+}
+
+tr:hover td {
+    background: #dce8ff;
+    transition: 0.3s;
+}
+
+/* FORMULARIOS ESTILO PREMIUM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+select,
+textarea {
+    padding: 12px;
+    border: 2px solid #8fb7ff;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 6px rgba(26, 115, 232, 0.5);
+}
+
+button {
+    background: linear-gradient(90deg, #1a73e8, #3b89ff);
+    padding: 14px 18px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 180px;
+    align-self: center;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(26, 115, 232, 0.5);
+}
+
+/*FOOTER*/
+footer {
+    background: #1a4eb5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #7cb0ff;
+}
